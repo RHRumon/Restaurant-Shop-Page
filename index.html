@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font Inter link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font poppins link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+      .containers {
+        max-width: 1320px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="containers md:p-0 p-7">
+      <nav class="flex justify-between poppins md:pt-[35px] md:pb-[60px] py-3">
+        <div class="bg-[#39DB4A] rounded-[8px]">
+          <img
+            class="p-4 flex text-center items-start"
+            src="./Images/F.png"
+            alt=""
+          />
+        </div>
+        <div class="block md:hidden items-center">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex gap-[55px] items-center">
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Home</a
+          >
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Menu
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Services
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <a class="hover:text-[#39DB4A] text-xl leading-[30px]" href=""
+            >Offers</a
+          >
+        </div>
+        <div class="hidden md:flex gap-[55px] items-center">
+          <i class="fa-solid fa-magnifying-glass hover:text-[#39DB4A]"></i>
+          <i class="fa-solid fa-bag-shopping hover:text-[#39DB4A]"></i>
+
+          <button
+            class="hover:text-white border border-[#39DB4A] rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-5"
+            type="submit"
+          >
+            <i class="fa-solid fa-phone-volume"></i>
+            Contact
+          </button>
+        </div>
+      </nav>
+
+      <!-- dive into section -->
+      <section class="inter text-center">
+        <h1
+          class="md:text-[62px] text-[40px] md:leading-[90px] leading-[64px] font-[800]"
+        >
+          Dive into Delights Of Delectable
+          <span class="text-[#39DB4A]">Food</span>
+        </h1>
+        <p
+          class="text-[#4A4A4A] md:text-[26px] text-[20px] md:leading-[44px] leading-[33px] pt-[20px] pb-[55px]"
+        >
+          Where Each Plate Weaves a Story of Culinary Mastery and Passionate
+          Craftsmanship
+        </p>
+
+        <button
+          class="hover:text-white border border-[#39DB4A] rounded-[40px] p-[10px] text-[#272727] hover:bg-[#39DB4A] px-6"
+          type="submit"
+        >
+          Order Now
+        </button>
+      </section>
+
+      <!-- Food list section -->
+      <section class="inter pt-[10.5rem]">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 md:gap-[60.25rem] gap-[2.25rem]"
+        >
+          <div class="flex md:gap-[2.75rem] gap-[17px]">
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >All</a
+            >
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >Salad</a
+            >
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >Pizza</a
+            >
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >Soups</a
+            >
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >Desserts</a
+            >
+            <a
+              class="hover:underline md:text-[32px] text-[18px] leading-[38px] font-[600] hover:text-[#39DB4A]"
+              href=""
+              >Drinks</a
+            >
+          </div>
+          <div class="">
+            <button
+              class="text-white border p-[10px] px-6 flex gap-[18px] text-[32px] items-center py-0 bg-black"
+              type="submit"
+            >
+              <img class="" src="./Images/Filter.png" alt="" />
+              Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- foods -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-[63px]"
+        >
+          <!-- 1 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Fattoush salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">24.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.9
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-2.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Vegetable salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">26.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.6
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-3.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-2.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Vegetable salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">$26.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.6
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-3.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-2.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Vegetable salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">$26.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.6
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-3.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-1.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 11 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-2.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Vegetable salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">26.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.6
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 12 -->
+          <div class="shadow-lg rounded-lg">
+            <div class="flex justify-end">
+              <i
+                class="fa-regular fa-heart p-4 rounded-tr-3xl rounded-bl-3xl bg-[#39DB4A] text-white"
+              ></i>
+            </div>
+
+            <div class="">
+              <img class="mx-auto" src="./Images/dish-3.png" alt="" />
+            </div>
+
+            <div>
+              <h1
+                class="text-[30px] leading-[36px] pt-[25px] font-semibold ml-[26px]"
+              >
+                Egg vegi salad
+              </h1>
+              <p
+                class="text-[#555555] text-[22px] leading-[26px] py-3 ml-[26px]"
+              >
+                Description of the item
+              </p>
+              <div
+                class="flex justify-between px-[26px] items-center pb-[35px]"
+              >
+                <p>
+                  <span class="text-[#FF6868] text-[30px]">$</span
+                  ><span class="text-[30px] leading-[36px]">23.00</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-star mr-1 text-yellow-400"></i>4.5
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 justify-center items-center content-center">
+          <i class="fa-solid fa-chevron-left p-2 bg-[#39DB4A] rounded-full"></i>
+          <p class="text-[20px] leading-[24px] font-bold">1</p>
+          <p class="text-[20px] leading-[24px] font-bold">2</p>
+          <p class="text-[20px] leading-[24px] font-bold">3</p>
+          <p class="text-[20px] leading-[24px] font-bold">4</p>
+          <p class="text-[20px] leading-[24px] font-bold">5</p>
+          <p class="text-[20px] leading-[24px] font-bold">6</p>
+          <p class="text-[20px] leading-[24px] font-bold">7</p>
+          <i
+            class="fa-solid fa-chevron-right p-2 bg-[#39DB4A] rounded-full"
+          ></i>
+        </div>
+      </section>
+
+      <footer class="mt-[10rem] inter pb-14">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
+          <div>
+            <img class="pb-6" src="./Images/nav-logo.png" alt="" />
+            <p class="text-[#555555] text-2xl leading-[35px]">
+              Savor the artistry where <br />
+              every dish is a culinary <br />
+              masterpiece
+            </p>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Useful links</h1>
+            <h1><a class="text-[#555555]" href="">About us</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>Events</h1>
+            <h1><a class="text-[#555555]" href=""></a>Blogs</h1>
+            <h1><a class="text-[#555555]" href=""></a>FAQ</h1>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Main Menu</h1>
+            <h1><a class="text-[#555555]" href="">Home</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>Offers</h1>
+            <h1><a class="text-[#555555]" href=""></a>Menus</h1>
+            <h1><a class="text-[#555555]" href=""></a>Reservation</h1>
+          </div>
+          <div class="flex flex-col gap-[12px]">
+            <h1 class="text-[26px] leading-[20px] font-bold">Contact Us</h1>
+            <h1><a class="text-[#555555]" href="">rhrumon@gmail.com</a></h1>
+            <h1><a class="text-[#555555]" href=""></a>+64 958 248 966</h1>
+            <h1><a class="text-[#555555]" href=""></a>Social media</h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9">
+          <div
+            class="flex gap-[32px] md:mt-[4.25rem] md:ml-0 ml-[56px] mt-[38px]"
+          >
+            <i
+              class="fa-brands fa-facebook hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-instagram hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-square-twitter hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-youtube hover:text-white hover:bg-[#39DB4A] p-3 bg-[#EDFFEF] rounded-full"
+            ></i>
+          </div>
+          <!-- <div class="border-2 flex items-end"> -->
+          <p
+            class="text-[#555555] md:text-[22px] text-base leading-[25px] md:mt-[4.75rem] md:ml-[-244px] ml-[19px] mt-[-0.25rem]"
+          >
+            Copyright 2023 Dscode | All rights reserved
+          </p>
+          <!-- </div> -->
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
